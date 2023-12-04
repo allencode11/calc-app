@@ -1,0 +1,11 @@
+.header {
+    width: 533px;
+    height: 44px;
+    font-family: 'League Spartan', sans-serif;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

@@ -1,0 +1,17 @@
+.calc-screen {
+    width: 540px;
+    height: 128px;
+    background-color: #181F33;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.calc-result {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: white;
+    padding-right: 32px;
+}
