@@ -5,10 +5,12 @@ export type btnProps =  {
   width: number;
   func: Function
   textColor: string;
+  shadow: string;
 }
 export const ColorButton = (btn: btnProps) => {
   return (
-    <div id='btn' className='inner-shadow-box' style={{backgroundColor: btn.color, width: btn.width, color: btn.textColor}}
+    <div id='btn'
+         style={{backgroundColor: btn.color, width: btn.width, color: btn.textColor, borderBottom: `4px solid ${btn.shadow}`}}
          onClick={() => {btn.func(btn.content)}}>
       {btn.content}
     </div>

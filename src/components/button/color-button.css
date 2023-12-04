@@ -9,6 +9,7 @@
     overflow: hidden;
     font-family: 'League Spartan', sans-serif;
     cursor: pointer;
+    border-bottom: 5px solid #979797;
 }
 .inner-shadow-box {
     height: 64px;
