@@ -8,6 +8,7 @@ export type btnProps =  {
   textColor: string;
   shadow: string;
   activeColor: string;
+  fontSize: string;
 }
 export const ColorButton = (btn: btnProps) => {
   const [isHovered, setIsHovered] = useState(false);
@@ -17,6 +18,7 @@ export const ColorButton = (btn: btnProps) => {
     width: btn.width,
     color: btn.textColor,
     borderBottom: `4px solid ${btn.shadow}`,
+    fontSize: btn.fontSize !== '' ? btn.fontSize : '40px',
   };
   const handleMouseEnter = () => {
     setIsHovered(true);
