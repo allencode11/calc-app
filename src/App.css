@@ -5,6 +5,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: var(--backgroundColor);
+  transition: all .3s;
 }
 
 .main {

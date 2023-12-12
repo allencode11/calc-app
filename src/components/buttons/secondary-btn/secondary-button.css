@@ -1,0 +1,11 @@
+.secondary {
+    width: 101px;
+    background-color: var(--secondBtnColor);
+    color: var(--btn2TextColor);
+    border-bottom: 4px solid var(--borderSecondBtnColor);
+    font-size: 28px;
+}
+
+.secondary:hover {
+    background-color: var(--activeSecondBtnColor);
+}

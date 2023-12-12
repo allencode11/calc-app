@@ -2,7 +2,7 @@
     width: 533px;
     height: 44px;
     font-family: 'League Spartan', sans-serif;
-    color: white;
+    color: var(--textColor);
     font-size: 32px;
     font-weight: bold;
     display: flex;

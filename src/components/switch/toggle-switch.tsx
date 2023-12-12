@@ -1,11 +1,16 @@
 import './toggle-switch.css';
-import {useState} from "react";
+import { useState } from "react";
 
-export const ToggleSwitch = () => {
+type SwitchProps = {
+  handleSwitch: Function
+}
+export const ToggleSwitch = ({ handleSwitch } : SwitchProps) => {
   const [position, setPosition] = useState(0); // 0: Position 1, 1: Position 2, 2: Position 3
 
   const handleToggle = () => {
-    setPosition((position + 1) % 3); // Toggle between 0, 1, 2
+    const pos = (position + 1) % 3
+    setPosition(pos); // Toggle between 0, 1, 2
+    handleSwitch(pos);
   };
 
   return (
@@ -20,8 +25,8 @@ export const ToggleSwitch = () => {
       <div className='switch-content'>
         <div className='switch-title'>THEME</div>
         <div className='switch'>
-          <div className={'slider'}>
-            <div onClick={handleToggle} className={`round position-${position + 1}`}></div>
+          <div onClick={handleToggle} className={'slider'}>
+            <div className={`round position-${position + 1}`}></div>
           </div>
         </div>
       </div>

@@ -1,11 +1,15 @@
 import './calc-header.css';
 import { ToggleSwitch } from "../switch/toggle-switch";
 
-export const CalcHeader = () => {
+type HeaderProps = {
+  modifyFun: Function
+}
+
+export const CalcHeader = ({modifyFun} : HeaderProps) => {
   return (
     <div className='header'>
       <div className='logo'>calc</div>
-        <ToggleSwitch></ToggleSwitch>
+        <ToggleSwitch handleSwitch={modifyFun}></ToggleSwitch>
     </div>
   );
 }

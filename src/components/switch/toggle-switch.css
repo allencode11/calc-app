@@ -57,7 +57,7 @@
 .slider {
     cursor: pointer;
     position: relative;
-    background-color: #242D44;
+    background-color: var(--secondaryColor);
     border-radius: 13px;
     padding: 5px;
 }
@@ -67,7 +67,7 @@
     border-radius: 50%;
     width: 16px;
     height: 16px;
-    background: #D03F2F;
+    background: var(--equalBtnColor);
 }
 
 .position-1 {

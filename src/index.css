@@ -11,3 +11,69 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --primaryColor: #181F33;
+  --secondaryColor: #242D44;
+  --textColor: #FFFFFF;
+  --btnTextColor: #434A59;
+  --btn2TextColor: #FFFFFF;
+  --btn3TextColor: #FFFFFF;
+  --backgroundColor: #3A4663;
+
+  --equalBtnColor: #D03F2F;
+  --secondBtnColor: #647198;
+  --mainBtnColor: #EAE3DC;
+
+  --activeEqualBtnColor: #F96B5B;
+  --activeSecondBtnColor: #A2B2E1;
+  --activeMainBtnColor: #fff;
+
+  --borderEqualBtnColor: #94241c;
+  --borderSecondBtnColor: #3A4663;
+  --borderMainBtnColor: #979797;
+}
+
+[data-theme=white] {
+  --primaryColor: #EEEEEE;
+  --secondaryColor: #D2CDCD;
+  --textColor: #36362C;
+  --btnTextColor: #36362C;
+  --btn2TextColor: #fff;
+  --btn3TextColor: #fff;
+  --backgroundColor: #E6E6E6;
+
+  --equalBtnColor: #C85402;
+  --secondBtnColor: #378187;
+  --mainBtnColor: #E5E4E1;
+
+  --activeEqualBtnColor: #FF8A38;
+  --activeSecondBtnColor: #62B5BC;
+  --activeMainBtnColor: #FFFFFF;
+
+  --borderEqualBtnColor: #873901;
+  --borderSecondBtnColor: #1b6066;
+  --borderMainBtnColor: #a79e91;
+}
+
+[data-theme=dark] {
+  --primaryColor: #1E0936;
+  --secondaryColor: #1E0936;
+  --textColor: #FFE53D;
+  --btnTextColor: #FFE53D;
+  --btn2TextColor: #fff;
+  --btn3TextColor: #1A2327;
+  --backgroundColor: #17062A;
+
+  --equalBtnColor: #00DED0;
+  --secondBtnColor: #56077C;
+  --mainBtnColor: #331C4D;
+
+  --activeEqualBtnColor: #93FFF8;
+  --activeSecondBtnColor: #8631AF;
+  --activeMainBtnColor: #6C34AC;
+
+  --borderEqualBtnColor: #6cf9f0;
+  --borderSecondBtnColor: #881c9e;
+  --borderMainBtnColor: #881c9e;
+}

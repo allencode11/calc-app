@@ -1,0 +1,11 @@
+.equal {
+    width: 227px;
+    background-color: var(--equalBtnColor);
+    color: var(--btn3TextColor);
+    border-bottom: 4px solid var(--borderEqualBtnColor);
+    font-size: 28px;
+}
+
+.equal:hover {
+    background-color: var(--activeEqualBtnColor);
+}

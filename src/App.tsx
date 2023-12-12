@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import './App.css';
 import { CalcHeader } from "./components/calc-header/calc-header";
 import { CalcScreen } from "./components/calc-screen/calc-screen";
 import { CalcButtons } from "./components/calc-buttons/calc-buttons";
-import { themes } from "./Theme";
 
 function App() {
   const [firstNum, setFirstNum] = useState('');
@@ -11,7 +10,20 @@ function App() {
   const [operation, setOperation] = useState('');
   const [isOperationClicked, setIsOperationClicked] = useState(false);
   const [result, setResult] = useState(0);
-  const [themeNum, setThemeNum] = useState('theme0');
+  const [theme, setTheme] = useState('primary');
+
+  const modifyTheme = (value: number) => {
+    switch (value) {
+      case 0:
+        setTheme("primary");
+        break;
+      case 1:
+        setTheme("white");
+        break;
+      case 2:
+        setTheme("dark")
+    }
+  }
 
   const numClick = (value: string) => {
     !isOperationClicked ? setFirstNum(firstNum => {
@@ -72,9 +84,9 @@ function App() {
   };
 
   return (
-    <div className='App' style={{backgroundColor: themes.theme0.backgroundColor}}>
+    <div className='App' data-theme={theme}>
       <div className='main'>
-        <CalcHeader></CalcHeader>
+        <CalcHeader modifyFun={modifyTheme}></CalcHeader>
         <div className='calc'>
           <CalcScreen result={result}></CalcScreen>
           <CalcButtons

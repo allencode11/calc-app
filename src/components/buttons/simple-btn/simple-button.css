@@ -1,0 +1,11 @@
+.simple {
+    width: 101px;
+    background-color: var(--mainBtnColor);
+    color: var(--btnTextColor);
+    border-bottom: 4px solid var(--borderMainBtnColor);
+    font-size: 40px;
+}
+
+.simple:hover {
+    background-color: var(--activeMainBtnColor);
+}

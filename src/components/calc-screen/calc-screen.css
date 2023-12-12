@@ -1,7 +1,7 @@
 .calc-screen {
     width: 540px;
     height: 128px;
-    background-color: #181F33;
+    background-color: var(--primaryColor);
     border-radius: 10px;
     display: flex;
     justify-content: flex-end;
@@ -12,6 +12,6 @@
     font-family: 'League Spartan', sans-serif;
     font-size: 56px;
     font-weight: bold;
-    color: white;
+    color: var(--textColor);
     padding-right: 32px;
 }
