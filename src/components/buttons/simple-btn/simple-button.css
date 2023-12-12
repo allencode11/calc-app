@@ -9,3 +9,10 @@
 .simple:hover {
     background-color: var(--activeMainBtnColor);
 }
+
+@media only screen and (max-width: 550px) {
+    .simple {
+        width: 60px;
+        font-size: 32px;
+    }
+}

@@ -9,3 +9,10 @@
 .secondary:hover {
     background-color: var(--activeSecondBtnColor);
 }
+
+@media only screen and (max-width: 550px) {
+    .secondary {
+        width: 60px;
+        font-size: 20px;
+    }
+}

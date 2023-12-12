@@ -81,3 +81,9 @@
 .position-3 {
     transform: translateX(45px);
 }
+
+@media only screen and (max-width: 550px) {
+    .toggle-switch {
+        height: 42px;
+    }
+}

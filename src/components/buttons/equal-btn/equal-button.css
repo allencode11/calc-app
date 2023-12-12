@@ -9,3 +9,10 @@
 .equal:hover {
     background-color: var(--activeEqualBtnColor);
 }
+
+@media only screen and (max-width: 550px) {
+    .equal {
+        width: 133px;
+        font-size: 20px;
+    }
+}

@@ -9,3 +9,8 @@
     font-family: 'League Spartan', sans-serif;
     cursor: pointer;
 }
+@media only screen and (max-width: 550px) {
+    #btn {
+        border-radius: 5px;
+    }
+}

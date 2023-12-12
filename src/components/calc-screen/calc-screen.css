@@ -14,4 +14,18 @@
     font-weight: bold;
     color: var(--textColor);
     padding-right: 32px;
+    letter-spacing: -0.93px;
+}
+
+@media only screen and (max-width: 550px) {
+    .calc-screen {
+        width: 327px;
+        height: 88px;
+    }
+
+    .calc-result {
+        font-size: 40px;
+        padding-right: 25px;
+        letter-spacing: -0.67px;
+    }
 }
