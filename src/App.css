@@ -10,17 +10,25 @@
 }
 
 .main {
-  width: 540px;
-  height: 708px;
+  height: 706px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .calc {
-  width: 540px;
   height: 632px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media only screen and (max-width: 550px) {
+  .main {
+    height: 604px;
+  }
+
+  .calc {
+    height: 532px;
+  }
 }
