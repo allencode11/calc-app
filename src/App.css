@@ -24,6 +24,11 @@
 }
 
 @media only screen and (max-width: 550px) {
+  .App {
+    min-width: 330px;
+    min-height: 604px;
+  }
+
   .main {
     height: 604px;
   }
